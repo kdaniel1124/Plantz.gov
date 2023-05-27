@@ -17,6 +17,7 @@ npm install mongodb express cors dotenv
 # Navbar functionality
 npm install react-router-dom
 npm install --save styled-components
+npm install react-icons
 ```
 
 ## 2. Fix vulnerabilities
