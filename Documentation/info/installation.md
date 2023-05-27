@@ -6,11 +6,11 @@ The purpose of this document is to list instructions for how to install and run 
 - [MERN Stack Tutorial](https://www.mongodb.com/languages/mern-stack-tutorial)
 
 # Install
+### Create the app (don't need to do this again)
+#npx create-react-app amplifyapp
+
 ## 1. Install dependencies
 ```
-# Basic dependencies for app
-npx create-react-app amplifyapp
-
 # MERN stack
 npm install mongodb express cors dotenv
 
@@ -80,7 +80,7 @@ npm install
 
 ## 3. Run app
 ```
-cd amplifyapp
+cd <app folder>
 npm start
 ```
 
