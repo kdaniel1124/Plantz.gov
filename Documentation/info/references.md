@@ -8,8 +8,12 @@ The purpose of this document is to hold information such as tutorials, reference
 
 
 ## React
+### General tutorial
+Sources:
+- [FCC React](https://www.freecodecamp.org/learn/front-end-development-libraries/react/)
 ### Navbar
-Source: [How to build a navbar in React](https://www.geeksforgeeks.org/create-a-responsive-navbar-using-reactjs/#)
-
+Sources: 
+- [How to build a navbar in React](https://www.geeksforgeeks.org/create-a-responsive-navbar-using-reactjs/#)
+- [React Router](https://www.freecodecamp.org/news/learn-react-router-6-full-course/)
 
 ## Example2
