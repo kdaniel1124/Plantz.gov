@@ -2,27 +2,27 @@
 The purpose of this document is to list instructions for how to install and run this app. Packages in Node change very frequently and it is important to stay on top of vulnerabilities as much as possible. When building the app, `npm` will mention vulnerabilities if it finds them. Oftentimes there will be some workaround to resolve them, but it will take some Googling and a lot of patience. As we encounter errors, read them carefully as to not break something that has core functionality to the app.
 
 # References
-[Creating a React app in AWS](https://aws.amazon.com/getting-started/hands-on/build-react-app-amplify-graphql/module-one/?e=gs2020&p=build-a-react-app-intro)
-[MERN Stack Tutorial](https://www.mongodb.com/languages/mern-stack-tutorial)
+- [Creating a React app in AWS](https://aws.amazon.com/getting-started/hands-on/build-react-app-amplify-graphql/module-one/?e=gs2020&p=build-a-react-app-intro)
+- [MERN Stack Tutorial](https://www.mongodb.com/languages/mern-stack-tutorial)
 
 # Install
-## Install dependencies
+## 1. Install dependencies
 ```
 # Basic dependencies for app
 npx create-react-app amplifyapp
 
 # MERN stack
-
+npm install mongodb express cors dotenv
 
 # Navbar functionality
 npm install react-router-dom
 npm install --save styled-components
 ```
 
-## Fix vulnerabilities
+## 2. Fix vulnerabilities
 For react-scripts, npm audit says to downgrade -- but according to [this thread](https://github.com/facebook/create-react-app/issues/12132), you can install a non-vulnerable version of an upstream dependency (@svgr/webpack) 
 
-### npm audit before making changes
+#### npm audit before making changes
 ```
 jack@Jacks-MacBook-Pro plantapp % npm audit
 # npm audit report
@@ -57,7 +57,7 @@ To address all issues (including breaking changes), run:
 
 When fixing this vulnerability, a version conflict occurs with the `typescript` module. At the time of writing, set version to `4.9.5` to resolve this (see below).
 
-### Add the following to `package.json`
+#### Add the following to `package.json`
 ```
 ...
 
@@ -72,12 +72,12 @@ When fixing this vulnerability, a version conflict occurs with the `typescript` 
 
 ```
 
-### Remove `package.lock` and `node_modules`, then run npm install again
+#### Remove `package.lock` and `node_modules`, then run `npm install` again
 ```
 npm install
 ```
 
-## Run app
+## 3. Run app
 ```
 cd amplifyapp
 npm start
